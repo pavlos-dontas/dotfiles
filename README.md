@@ -1,9 +1,12 @@
-# Dotfiles
+# dotfiles
 
-Setup new environments with a single command.
+Personal configuration repo using [Chezmoi](https://www.chezmoi.io/), a configuration management tool, written in Go.
 
-```sh
-git clone git@github.com:pavlos-dontas/dotfiles.git .dotfiles
-cd .dotfiles
-./install.sh
+## Installation
+
+The below command will install and configure everything without having to locally install **Chezmoi**.
+
+```bash
+export GITHUB_USERNAME=pavlos-dontas
+sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply $GITHUB_USERNAME
 ```

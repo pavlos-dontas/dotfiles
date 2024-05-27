@@ -1,0 +1,24 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+#PS1='[\u@\h \W]\$ '
+
+# DDEV
+alias dcex='ddev drush cex'
+alias dcim='ddev drush cim'
+alias dcr='ddev drush cr'
+alias duli='ddev drush uli'
+alias composer='ddev composer'
+alias drush='ddev drush'
+alias robo='ddev robo' # Expect a robo command defined in your global or project settings.
+alias xe='ddev xdebug enable'
+alias xd='ddev xdebug disable'
+alias xt='status=$(ddev xdebug status) &&  if [ "$status" == "xdebug enabled" ]; then ddev xdebug off; else ddev xdebug on; fi'
+
+alias ..='cd ..'
